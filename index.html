@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-        <script src="jQuery.interactive_bg.js"></script>
-        <title>zMetaphase Site</title>
-        <script>
-            (".bg").interactive_bg({
-                strength: 25,
-                scale: 1.05,
-                animationSpeed: "100ms",
-                contain: true,
-                wrapContent: false
-            });
-        </script>
+        <title>Chat with Me!</title>    
     </head>
     
-    <body style="background-image: url('bg.jpg')">
-        <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png" />
-        <h1>zMetaphase</h1>
-        <p>Coder Dino</p>
-        <p>Will code for food!</p>
-        <p>Finally shane's on TS!</p>
+    <body>
+        <div id="messages"></div>
         
-        <div class="bg" data-ibg-bg="bg.jpg"></div>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="text" id="messageInput" placeholder="Message">
         
+        <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
