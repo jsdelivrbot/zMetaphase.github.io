@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Chat with Me!</title>    
-    </head>
-    
-    <body>
-        <div id="messages"></div>
-        
-        <input type="text" id="nameInput" placeholder="Name">
-        <input type="text" id="messageInput" placeholder="Message">
-        
-        <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="main.js"></script>
-    </body>
+	<head>
+		<title>Project 6</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	</head>
+	
+	<body>
+	
+	<!-- Start of navigatio bar -->
+	<ul>
+		<li><a class="active" href="Home.html" target="iframe_main">Home</a></li>
+		<li><a href="Pictures.html" target="iframe_main">Pictures</a></li>
+		<li><a href="tables.html" target="iframe_main">Tables</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>
+	<!-- End of navigation bar -->
+	
+	<div style="position: auto;margin-left:15%;padding:1px 16px;height:1000px;">
+		<iframe src="Home.html" frameBorder="0" style="width:1585px;height:1000px;" name="iframe_main">
+	</div>
+
+</body>
 </html>
